@@ -1,2 +1,2 @@
 # Mixed_Messages
-Codecademy Mixed Messages portfolio project
+Codecademy *Mixed Messages* portfolio project.
