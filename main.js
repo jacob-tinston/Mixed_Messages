@@ -10,7 +10,7 @@ const sunPrep = ['Be sure to wear shorts!', 'Don\'t forget your suncream!', 'Gre
 
 // Sets variables for all the end message components.
 const randDate = dates[Math.floor(Math.random() * dates.length)];
-const randWeather = weather[Math.floor(Math.random() * dates.length)];
+const randWeather = weather[Math.floor(Math.random() * weather.length)];
 let randWeatherMsg = '';
 
 // Assigns a value to randWeatherMessage and return string with all the components added.
