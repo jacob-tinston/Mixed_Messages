@@ -13,20 +13,34 @@ const randDate = dates[Math.floor(Math.random() * dates.length)];
 const randWeather = weather[Math.floor(Math.random() * weather.length)];
 let randWeatherMsg = '';
 
+//Adds time specific greeting as timeOfDay
+let date = new Date();
+let hours = date.getHours();
+let timeOfDay;
+if (hours >= 0 && hours <= 12){
+    timeOfDay = "morning"
+}
+else if (hours > 12 && hours <= 14){
+    timeOfDay = "afternoon"
+}
+else if (hours > 6 && hours <= 23){
+    timeOfDay = "evening"
+}
+
 // Assigns a value to randWeatherMessage and return string with all the components added.
-function weatherMessage() {
+function weatherMessage(name) {
     if (randWeather === 'rainy') {
         randWeatherMsg = rainPrep[Math.floor(Math.random() * rainPrep.length)];
     } else if (randWeather === 'snowy') {
         randWeatherMsg = snowPrep[Math.floor(Math.random() * snowPrep.length)];
     } else if (randWeather === 'windy') {
         randWeatherMsg = windPrep[Math.floor(Math.random() * windPrep.length)];
-    } else if (randWeather === 'sunny') {
+    } else {
         randWeatherMsg = sunPrep[Math.floor(Math.random() * sunPrep.length)];
     };
-    return `The date is ${randDate} and the weather for today is predicted to be ${randWeather}. ${randWeatherMsg}`;
+    return `Good ${timeOfDay}, ${name}! The date is ${randDate} and the weather for today is predicted to be ${randWeather}. ${randWeatherMsg}`;
 }
 
 // Assigns the message to the result of calling the function and logs it to the console.
-const message = weatherMessage();
-console.log(message);
+console.log(weatherMessage('Jesse'))
+
