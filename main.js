@@ -42,5 +42,5 @@ function weatherMessage(name) {
 }
 
 // Assigns the message to the result of calling the function and logs it to the console.
-console.log(weatherMessage('Jesse'))
+console.log(weatherMessage('friend'))
 
