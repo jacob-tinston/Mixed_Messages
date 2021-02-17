@@ -30,4 +30,5 @@ Project is: _in progress_
 
 ## Contact
 Created by: Jacob  <br/>
-Add me on [Instagram!](https://www.instagram.com/jacobtinston_04/) 
+Add me on [Instagram!](https://www.instagram.com/jacobtinston_04/)  <br/>
+Additional contributions and functionality by: [Jesse](https://github.com/jscheinbart)
