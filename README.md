@@ -7,7 +7,6 @@
 * [General info](#general-info)
 * [Technologies](#technologies)
 * [Status](#status)
-* [To-do List](#to-do-list)
 * [Contact](#contact)
 
 ## General info
@@ -21,12 +20,10 @@ return `Good ${timeOfDay}, ${name}! The date is ${randDate} and the weather for 
 ## Technologies
 * Coded in Visual Studio Code
 * JavaScript
+* HTML5
 
 ## Status
-Project is: _in progress_
-
-## To-do List
-* Add HTML/CSS to be able to showcase the 'weather forecast' via the browser. 
+Project is: _finished_
 
 ## Contact
 Created by: Jacob  <br/>
