@@ -1,5 +1,9 @@
 // Mixed Messages Project - Weather Forecast
 
+let element = document.getElementById('message')
+let button = document.getElementById('button')
+
+button.addEventListener('click', function(){
 // Arrays of all the different scenarios.
 const dates = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'];
 const weather = ['rainy', 'snowy', 'windy', 'sunny'];
@@ -39,8 +43,9 @@ function weatherMessage(name) {
         randWeatherMsg = sunPrep[Math.floor(Math.random() * sunPrep.length)];
     };
     return `Good ${timeOfDay}, ${name}! The date is ${randDate} and the weather for today is predicted to be ${randWeather}. ${randWeatherMsg}`;
-}
+ }
 
-// Assigns the message to the result of calling the function and logs it to the console.
-console.log(weatherMessage('friend'))
+ element.innerHTML = weatherMessage('friend')
+
+})
 
